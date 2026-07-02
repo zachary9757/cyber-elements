@@ -1,6 +1,6 @@
 # Cyber Elements
 
-A static kinetic showcase page for cyber security building blocks.
+A responsive kinetic visualization page showcasing cyber security elements.
 
 ## Run locally
 
