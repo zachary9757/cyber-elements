@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cyber Elements is a kinetic static showcase for the building blocks of modern security."
+    />
+    <title>Cyber Elements</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Cyber Elements home">
+        <span class="brand-mark">CE</span>
+        <span>Cyber Elements</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#matrix">Matrix</a>
+        <a href="#systems">Systems</a>
+        <a href="#signal">Signal</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Static site / kinetic security map</p>
+          <h1>Cyber Elements</h1>
+          <p class="hero-text">
+            A visual field guide to the small controls, protocols, and signals
+            that shape modern defense.
+          </p>
+        </div>
+
+        <aside class="status-panel reveal" aria-label="Current signal">
+          <div class="status-row">
+            <span>Channel</span>
+            <strong id="active-code">AUTH</strong>
+          </div>
+          <div class="status-meter" aria-hidden="true">
+            <span></span>
+          </div>
+          <p id="active-detail">
+            Identity is the front door, the audit trail, and the blast radius.
+          </p>
+        </aside>
+      </section>
+
+      <section id="matrix" class="matrix-section section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Element matrix</p>
+          <h2>Controls as matter</h2>
+          <p>
+            Each tile represents a concrete security primitive. Together they
+            read like infrastructure chemistry instead of a generic feature
+            list.
+          </p>
+        </div>
+
+        <div class="element-grid" aria-label="Cyber security element matrix">
+          <button
+            class="element-card reveal"
+            type="button"
+            data-code="AUTH"
+            data-detail="Identity is the front door, the audit trail, and the blast radius."
+          >
+            <span class="atomic">01</span>
+            <strong>AUTH</strong>
+            <small>Identity</small>
+          </button>
+          <button
+            class="element-card reveal"
+            type="button"
+            data-code="TLS"
+            data-detail="Encrypted transport keeps ordinary traffic from becoming exposed inventory."
+          >
+            <span class="atomic">02</span>
+            <strong>TLS</strong>
+            <small>Transport</small>
+          </button>
+          <button
+            class="element-card reveal"
+            type="button"
+            data-code="DNS"
+            data-detail="Name resolution is a map, a choke point, and often the first weak signal."
+          >
+            <span class="atomic">03</span>
+            <strong>DNS</strong>
+            <small>Routing</small>
+          </button>
+          <button
+            class="element-card reveal"
+            type="button"
+            data-code="WAF"
+            data-detail="Application filtering turns noisy public edges into observable policy."
+          >
+            <span class="atomic">04</span>
+            <strong>WAF</strong>
+            <small>Edge</small>
+          </button>
+          <button
+            class="element-card reveal"
+            type="button"
+            data-code="SIEM"
+            data-detail="Correlation makes separate events useful before they become a postmortem."
+          >
+            <span class="atomic">05</span>
+            <strong>SIEM</strong>
+            <small>Signals</small>
+          </button>
+          <button
+            class="element-card reveal"
+            type="button"
+            data-code="EDR"
+            data-detail="Endpoint telemetry keeps local behavior connected to wider campaign traces."
+          >
+            <span class="atomic">06</span>
+            <strong>EDR</strong>
+            <small>Endpoint</small>
+          </button>
+          <button
+            class="element-card reveal"
+            type="button"
+            data-code="C2"
+            data-detail="Command channels reveal intent through timing, repetition, and destination drift."
+          >
+            <span class="atomic">07</span>
+            <strong>C2</strong>
+            <small>Adversary</small>
+          </button>
+          <button
+            class="element-card reveal"
+            type="button"
+            data-code="IR"
+            data-detail="Response work is the moment evidence becomes containment and recovery."
+          >
+            <span class="atomic">08</span>
+            <strong>IR</strong>
+            <small>Recovery</small>
+          </button>
+        </div>
+      </section>
+
+      <section id="systems" class="systems-section section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">System layers</p>
+          <h2>From primitive to posture</h2>
+        </div>
+        <div class="layer-stack reveal" aria-label="Security system layers">
+          <article>
+            <span>Expose</span>
+            <h3>Inventory the surface</h3>
+            <p>Ports, identities, packages, domains, and cloud edges.</p>
+          </article>
+          <article>
+            <span>Observe</span>
+            <h3>Keep the signal intact</h3>
+            <p>Logs, traces, alerts, and user context stay readable.</p>
+          </article>
+          <article>
+            <span>Contain</span>
+            <h3>Move before certainty</h3>
+            <p>Limit paths, revoke access, and isolate the noisy edge.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="signal" class="signal-section section-shell">
+        <div class="signal-band reveal">
+          <p class="eyebrow">Deployment ready</p>
+          <h2>One static surface, no runtime server.</h2>
+          <p>
+            Ship the files behind Nginx, Caddy, GitHub Pages, Cloudflare Pages,
+            or any host that can serve a directory.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>
